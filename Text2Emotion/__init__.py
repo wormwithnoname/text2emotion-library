@@ -669,8 +669,8 @@ def get_emotion(input):
                 pass
         if sum(emotions.values()) is 0:
             return emotions
-        for i in emotions:
-            emotion_values.append(round((emotions[i] / sum(emotions.values())), 2))
+        # for i in emotions:
+        #     emotion_values.append(round((emotions[i] / sum(emotions.values())), 2))
         for j in emotions:
             emotions[j] = emotion_values[y]
             y += 1
